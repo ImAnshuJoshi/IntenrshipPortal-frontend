@@ -1,0 +1,9 @@
+.SearchContainer{
+    display: flex;
+    justify-content: space-between;
+    margin:20px 40px 20px 40px;
+    align-items: center;
+}
+.leftNav{
+    width:30%;
+}

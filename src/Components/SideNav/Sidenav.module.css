@@ -1,0 +1,25 @@
+.sideNavContainer {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 10px;
+  /* margin:30px auto auto 20px; */
+}
+
+.tab {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height:30px;
+  cursor: pointer;
+}
+
+.activeTab {
+  background-color: #6938EF;
+  font-weight: bold;
+  border-radius: 10px;
+  color: white;
+}
