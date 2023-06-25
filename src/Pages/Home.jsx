@@ -5,6 +5,7 @@ import SearchBar from '../Components/SearchBar/SearchBar'
 import styles from './Home.module.css'
 import CompanyCard from '../Components/CompanyCard/CompanyCard'
 import AdCard from '../Components/AdCard/AdCard'
+import CompanyDetails from '../Components/CompanyDetails/CompanyDetails'
 
 function Home() {
   return (
@@ -21,7 +22,7 @@ function Home() {
             <CompanyCard/>
             <AdCard/>
           </div>
-            {/* <SearchBar/> */}
+          <CompanyDetails/>
         </div>
     </div>
   )

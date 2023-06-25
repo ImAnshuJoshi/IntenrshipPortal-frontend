@@ -6,6 +6,7 @@ body {
     /* font-amily poppins */
     font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
+  font-weight:lighter;
   -moz-osx-font-smoothing: grayscale;
 }
 

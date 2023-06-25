@@ -1,0 +1,123 @@
+.CompanyDetailsContainer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width:61%;
+    background-color: white;
+    border-radius: 10px;
+    padding:2%;
+}
+.CompanyDetails{
+    display: flex;
+    align-items: center;
+    justify-content: centerr;
+}
+.positionDetails{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.PositionName{
+    font-size: 20px;
+    font-weight: bold;
+}
+.CompanyName{
+    color:#667085;
+
+}
+/*****Details *****/
+.internDetails{
+    width:100%;
+    margin: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.internDetails>div{
+    display: flex;
+}
+.eachDetail{
+    display: flex;   
+    justify-content: space-between;
+    width:200px;
+    margin-right: 30px;
+}
+.eachDetail>img{
+    object-fit: cover;
+}
+.horizontalLine{
+        border-top: 1px solid rgb(185, 185, 185);
+        margin: 20px 0;
+        width:80%;
+}
+.verticalLine {
+    border-left: 1px solid rgb(185, 185, 185);
+    height: 100%;
+  }
+.Values{
+    display: flex;
+
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.labelValue{
+    font-size: 18px;
+    font-weight: bold;
+}
+.detailLabel{
+    font-size: 13px;
+}
+.skills{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width:100%;
+    margin-top: 20px;
+}
+.EachSkill{
+    background-color: #F2F4F7;
+    padding:7px 15px;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+.moreDetails{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: start;
+}
+.aboutUs , .requirements{
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 25px;
+}
+.aboutCompany{
+    display: flex;
+    align-content: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.list>li{
+    margin-top: 4px;
+}
+.visitWebsite{
+    margin-top: 30px;
+    font-weight: bold;
+    color:#6938EF;
+}
+.applyBtn{
+    margin-top: 30px;
+    padding:12px 30px;
+    color:white;
+    background-color: #6938EF;
+    border:none;
+    border-radius: 20px;
+    cursor:pointer;
+}
