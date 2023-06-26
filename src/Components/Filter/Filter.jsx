@@ -48,7 +48,7 @@ function Filter({handleClick , handleFilterBtn}) {
           <Slider/>
         </div>
         <TagComponent data={locationProps}/>
-        <FilterFooter handleFilterBtn={handleFilterBtn}/>
+        <FilterFooter handleFilterBtn={handleFilterBtn} handleClick={handleClick}/>
     </div>
   )
 }
