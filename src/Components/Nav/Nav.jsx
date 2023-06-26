@@ -30,7 +30,7 @@ function Nav() {
         </div>
       </div>
       <div className={styles.icons}>
-        <img src={bell} alt="profile" />
+        <img src={bell} alt="profile" className={styles.bellIcon}/>
         <img src={image} alt="profile" className={styles.NavImg}/>
       </div>
     </div>

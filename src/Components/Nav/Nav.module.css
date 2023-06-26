@@ -30,13 +30,13 @@
   }
   
   .menuItem img {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     margin-right: 5px;
   }
   
   .menuItem div {
-    font-size: 14px;
+    font-size: 16px;
   }
   
   .icons {
@@ -44,13 +44,13 @@
     align-items: center;
   }
   
-  .icons img {
-    width: 20px;
-    height: 20px;
+  .bellIcon{
+    width: 30px;
+    height: 30px;
     margin-right: 10px;
   }
   .NavImg{
-    width:40px;
-    height:40px;
+    width:50px;
+    height:50px;
   }
   
