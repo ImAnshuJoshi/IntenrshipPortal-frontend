@@ -9,13 +9,13 @@ import close from "../../assets/icons/clipboardclose.png";
 
 const skills = ["Photoshop", "After effect", "Blender", "Canva", "Illustrator"];
 
-function CompanyCard() {
+function CompanyCard({company , handleClick}) {
   return (
     <div className={styles.CompanyCardContainer}>
       <div className={`${styles.heading} ${styles.eachContainer}`}>
         <div className={styles.aboutCompany}>
-          <div className={styles.position}>Motion Graphics Designer</div>
-          <div className={styles.company}>Xapo Visuals</div>
+          <div className={styles.position}>{company.position}</div>
+          <div className={styles.company}>{company.name}</div>
         </div>
         <div>
           <img src={bookmark} alt="Bookmark" />
@@ -23,13 +23,13 @@ function CompanyCard() {
       </div>
       <div className={styles.eachContainer}>
         <div>
-          <img src={Clogo} alt="Company logo" className={styles.logo} />
+          <img src={company.image} alt="Company logo" className={styles.logo} />
         </div>
         <div className={styles.skills}>
-          {skills.slice(0, 3).map((skill, index) => (
+          {company.skills.slice(0, 3).map((skill, index) => (
             <div key={index}>{skill}</div>
           ))}
-          {skills.length > 3 && (
+          {company.skills.length > 3 && (
             <div className={styles.showMore}>+{skills.length - 3}</div>
           )}
         </div>
@@ -37,21 +37,24 @@ function CompanyCard() {
         <div className={`${styles.infoContainer} ${styles.eachContainer}`}>
     <div className={styles.info}>
         <div>
-        <img src={timer} alt="Company logo" /><b>1 Month</b>
+        <img src={timer} alt="Company logo" /><b>{company.duration} Month</b>
         </div>
         <div>
-        <img src={users} alt="Company logo" /><b>200</b> Applicants
+        <img src={users} alt="Company logo" /><b>{company.totalApplicants}&nbsp;</b> Applicants
         </div>
     </div>
     <div className={styles.info}>
         <div>
-        <img src={walletmoney} alt="Company logo" /><b>$400-$500</b>
+        <img src={walletmoney} alt="Company logo" /><b>{company.stipend}</b>
         </div>
         <div>
-        <img src={close} alt="Company logo" />Ends in <b>&nbsp;3 days</b>
+        <img src={close} alt="Company logo" />Ends in <b>&nbsp;{company.endsOn} days</b>
         </div>
     </div>
     </div>
+    <button className={styles.applyBtn} onClick={handleClick}>
+      Apply Now
+    </button>
     </div>
   );
 }

@@ -1,0 +1,47 @@
+/* Slider.modular.css */
+.sliderParentContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+.sliderContainer {
+    display: flex;
+    align-items: center;
+    width:200px;
+    height:40px;
+  }
+  
+  .sliderLine {
+    flex: 1;
+    height: 2px;
+    background-color: #d0d5dd;
+    width:40px;
+    transform: translate(18px, -10px);
+  }
+  .sliderCircle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #d0d5dd;
+    margin-right:35px;
+    margin-top: -5px;
+  }
+  
+  .sliderText {
+    text-align: center;
+    color: #000000;
+    font-size: 14px;
+    margin-top: 4px;
+    transform: translate(-7px, 25px);
+    width:40px
+  }
+  .heading{
+        font-size: 17px;
+        font-weight: bold;
+        margin-bottom: 10px;
+  }
+  .selectedRange {
+  background-color: #6938EF;
+  /* Add any additional styles for the selected range */
+}

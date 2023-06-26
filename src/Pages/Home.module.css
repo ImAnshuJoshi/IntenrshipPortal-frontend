@@ -6,4 +6,16 @@
 }
 .leftNav{
     width:30%;
+    cursor: pointer;
+    overflow-y: scroll;
+    height: 100vh;
 }
+.filterComponent{
+    position: absolute;
+    right:0;
+    z-index: 100;
+}
+
+.leftNav::-webkit-scrollbar {
+    width: 0em; 
+  }

@@ -1,0 +1,37 @@
+.RadioComponentContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+    width:40%;
+}
+.header{
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.options{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 7px 7px 7px 0px;
+}
+.options>img{
+    margin-right: 10px;
+}
+.options>div{
+    background-color: #EBE9FE;
+    display: flex;
+    max-width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding:7px 20px;
+    margin:2px 2px 2px 0px;
+    border-radius: 7px;
+    color:#6938EF;
+}
+.boldText{
+    font-weight: bold;
+}
