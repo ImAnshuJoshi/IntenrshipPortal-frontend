@@ -1,56 +1,84 @@
-/* nav.module.css */
-
 .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: white;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
-  }
-  
-  .brand {
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  .browse{
-    color:#6938EF;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+}
 
-  .menu {
-    display: flex;
-  }
-  
+.brand {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.browse {
+  color: #6938ef;
+}
+
+.menu {
+  display: flex;
+}
+
+.menuItem {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  margin-right: 15px;
+}
+
+.menuItem img {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+
+.menuItem div {
+  font-size: 16px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.bellIcon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.NavImg {
+  width: 50px;
+  height: 50px;
+}
+
+@media (max-width: 1000px) {
   .menuItem {
-    display: flex;
-    align-items: center;
-    font-size: 16px;
-    margin-right: 15px;
+    margin-right: 10px;
   }
   
   .menuItem img {
-    width: 30px;
-    height: 30px;
+    width: 24px;
+    height: 24px;
     margin-right: 5px;
   }
   
   .menuItem div {
-    font-size: 16px;
+    display: none;
   }
   
   .icons {
-    display: flex;
-    align-items: center;
+    margin-left: 10px;
   }
   
-  .bellIcon{
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-  }
-  .NavImg{
-    width:50px;
-    height:50px;
+  .bellIcon {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
   }
   
+  .NavImg {
+    display: none;
+  }
+}

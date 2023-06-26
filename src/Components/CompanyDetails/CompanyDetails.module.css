@@ -94,7 +94,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: start;
+    justify-content: flex-start;
 }
 .aboutUs , .requirements{
     font-weight: bold;
@@ -103,6 +103,7 @@
 }
 .aboutCompany{
     display: flex;
+    flex-direction: column;
     align-content: flex-start;
     justify-content: flex-start;
     text-align: left;
@@ -129,4 +130,75 @@
     border:none;
     border-radius: 20px;
     cursor:pointer;
+}
+
+@media only screen and (max-width: 1000px){
+    .CompanyDetailsContainer{
+        width:100%;
+        margin-top: 50px;
+    }
+
+    /*****Details *****/
+    .internDetails{
+        width:100%;
+        /* margin: 20px 10px; */
+        display: flex;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+        justify-content: space-between;
+    }
+    .internDetails>div{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .eachDetail{
+        display: flex;   
+        justify-content: flex-start;
+        /* width:200px; */
+        margin-top: 20px;
+    }
+    .eachDetail>img{
+        object-fit: cover;
+        width:30px;
+        height:30px;
+    }
+    .firstCol>div{
+        margin:0px;
+    }
+    .horizontalLine{
+            border-top: 1px solid rgb(185, 185, 185);
+            margin: 20px 0;
+            width:100%;
+    }
+    .verticalLine {
+        border-left: 1px solid rgb(185, 185, 185);
+        height: 100%;
+    }
+    .Values{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .labelValue{
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .detailLabel{
+        font-size: 11px;
+    }
+    .skills{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width:100%;
+        margin-top: 20px;
+        flex-wrap: wrap;
+    }
+    .EachSkill{
+        background-color: #F2F4F7;
+        /* padding:7px 15px; */
+        border-radius: 20px;
+        margin-right: 20px;
+    }
 }

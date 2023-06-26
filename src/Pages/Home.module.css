@@ -19,3 +19,16 @@
 .leftNav::-webkit-scrollbar {
     width: 0em; 
   }
+
+  @media only screen and (max-width: 1000px) {
+    .rightNav{
+        width:100%;
+    }
+    .SearchContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .leftNav{
+        width:100%
+    }
+  }

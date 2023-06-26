@@ -45,8 +45,7 @@ function Home() {
       );
       const data = await response.json();
       setCompanies(data.companies);
-      console.log("hi");
-      setSelectedCompany(companies[0]);
+      setSelectedCompany(data.companies[0]);
     };
 
     getAllCompanies();

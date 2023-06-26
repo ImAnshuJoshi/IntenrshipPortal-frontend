@@ -23,12 +23,14 @@
       align-items: center;
       justify-content: center;
   }
-  .searchIcon {
-  }
-  
   .filterIcon {
     margin-left: 12px;
     width: 24px;
     height: 24px;
   }
-  
+  @media screen and (max-width: 1000px) {
+    .searchBar{
+      width: 100%;
+      margin-top: 30px;
+    }
+  }
